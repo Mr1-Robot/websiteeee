@@ -6,15 +6,22 @@ import { Link } from "react-router-dom";
 const Products = () => {
   const apiUrl = import.meta.env.VITE_API_KEY;
   const [products, setProducts] = useState([]);
+  const [error, setError] = useState("NetworkError");
 
   function getProducts() {
-    axios.get(`${apiUrl}/products`).then((res) => setProducts(res.data));
+    axios
+      .get(`${apiUrl}/products`)
+      .then((res) => setProducts(res.data))
+      .catch((err) => {
+        setError(err);
+      });
   }
 
   useEffect(() => {
     getProducts();
   }, []);
 
+  console.log(error);
   return (
     <div>
       <h1 className="text-center my-5">Products</h1>

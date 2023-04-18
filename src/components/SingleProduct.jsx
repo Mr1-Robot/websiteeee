@@ -8,7 +8,7 @@ const SingleProduct = ({ products }) => {
         products.map((item) => (
           <div
             key={item.id}
-            className="card d-flex flex-column justify-content-center"
+            className="card d-flex flex-column justify-content-center p-4"
             style={{ width: "18rem" }}
           >
             <img

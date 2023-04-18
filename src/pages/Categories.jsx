@@ -33,7 +33,7 @@ const Categories = () => {
   return (
     <div>
       <h1 className="text-center my-5">Categories</h1>
-      <div className="d-flex justify-content-center gap-4 mb-5">
+      <div className="d-flex flex-wrap justify-content-center gap-4 mb-5">
         {cat.length !== 0 ? (
           cat.map((item, i) => (
             <button
@@ -62,7 +62,7 @@ const Categories = () => {
             productsInCat.map((item) => (
               <div
                 key={item.id}
-                className="card d-flex flex-column justify-content-center"
+                className="card d-flex flex-column justify-content-center p-4"
                 style={{ width: "18rem" }}
               >
                 <img
