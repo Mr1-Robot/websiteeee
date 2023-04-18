@@ -1,24 +1,27 @@
 import { useEffect, useState } from "react";
 import ProductsList from "../components/ProductsList";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Products = () => {
+  const apiUrl = import.meta.env.VITE_API_KEY;
   const [products, setProducts] = useState([]);
 
-  function fetchProducts() {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((res) => console.log(res.data));
+  function getProducts() {
+    axios.get(`${apiUrl}/products`).then((res) => setProducts(res.data));
   }
 
   useEffect(() => {
-    fetchProducts();
+    getProducts();
   }, []);
 
   return (
     <div>
-      <h1>Products</h1>
-      <ProductsList />
+      <h1 className="text-center my-5">Products</h1>
+      <Link to={"/products/addProduct"} className="btn btn-success mb-4 mx-4">
+        Add a Product +
+      </Link>
+      <ProductsList products={products} />
     </div>
   );
 };

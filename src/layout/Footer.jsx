@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="text-center text-lg-start bg-light text-muted px-4">
+    <footer className="text-center text-lg-start bg-dark text-light px-4">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
@@ -44,22 +44,22 @@ const Footer = () => {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   Angular
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   React
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   Vue
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   Laravel
                 </a>
               </p>
@@ -68,22 +68,22 @@ const Footer = () => {
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   Pricing
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   Settings
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   Orders
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#!" className="text-reset text-decoration-none">
                   Help
                 </a>
               </p>

@@ -34,6 +34,14 @@ const Navbar = () => {
                 Products
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link active text-white"
+                to="/products/categories"
+              >
+                Categories
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

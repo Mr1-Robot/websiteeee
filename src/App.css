@@ -1,0 +1,22 @@
+.myCard {
+  width: 25rem;
+  gap: 3rem;
+}
+
+.CatHeading {
+  font-size: 1.1rem;
+  background-color: #008f8c;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  width: 12rem;
+}
+.CatHeading:hover {
+  background: #023535;
+}
+
+.CatName {
+  background: #008f8c;
+  border-radius: 0.5rem;
+}
