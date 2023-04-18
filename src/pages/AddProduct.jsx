@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 import * as Yup from "yup";
 
 const AddProduct = () => {
+
+  const apiUrl = import.meta.env.VITE_API_KEY;
+
   const addProduct = (values) => {
     axios
-      .post("https://fakestoreapi.com/products/", {
+      .post(`${apiUrl}/products`, {
         title: values.title,
         description: values.description,
         image: values.imageUrl,
